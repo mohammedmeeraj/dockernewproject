@@ -1,19 +1,19 @@
 version: '3.8'
 services:
   movies:
-    image: mohammedmeeraj/paytmmovies:latest
+    image: mohammedmeeraj/paymovies:latest
     ports:
       - "81:80"
     deploy:
       replicas: 3
   train:
-    image: mohammedmeeraj/paytmtrain:latest
+    image: mohammedmeeraj/paytrain:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
   dth:
-    image: mohammedmeeraj/paytmrecharge:latest
+    image: mohammedmeeraj/payrecharge:latest
     ports:
       - "83:80"
     deploy:
