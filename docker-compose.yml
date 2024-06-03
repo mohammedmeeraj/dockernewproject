@@ -6,13 +6,13 @@ services:
       - "81:80"
     deploy:
       replicas: 3
-  train:
-    image: mohammedmeeraj/paytrain:latest
+  flight:
+    image: mohammedmeeraj/payflight:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
-  dth:
+  recharge:
     image: mohammedmeeraj/payrecharge:latest
     ports:
       - "83:80"
