@@ -1,19 +1,19 @@
 version: '3.8'
 services:
   movies:
-    image: mohammedmeeraj/paymovies:latest
+    image: mohammedmeeraj/movies:latest
     ports:
       - "91:80"
     deploy:
       replicas: 3
   flight:
-    image: mohammedmeeraj/payflight:latest
+    image: mohammedmeeraj/flight:latest
     ports:
       - "92:80"
     deploy:
       replicas: 3
   recharge:
-    image: mohammedmeeraj/payrecharge:latest
+    image: mohammedmeeraj/recharge:latest
     ports:
       - "93:80"
     deploy:
