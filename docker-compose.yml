@@ -3,18 +3,18 @@ services:
   movies:
     image: mohammedmeeraj/paymovies:latest
     ports:
-      - "81:80"
+      - "91:80"
     deploy:
       replicas: 3
   flight:
     image: mohammedmeeraj/payflight:latest
     ports:
-      - "82:80"
+      - "92:80"
     deploy:
       replicas: 3
   recharge:
     image: mohammedmeeraj/payrecharge:latest
     ports:
-      - "83:80"
+      - "93:80"
     deploy:
       replicas: 3
